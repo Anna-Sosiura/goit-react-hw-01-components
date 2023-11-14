@@ -5,6 +5,7 @@ export const FriendListItem = ({ avatar, name, isOnline, id }) => {
       key={id}
       style={{
         width: 150,
+
         backgroundColor:
           { isOnline }.isOnline.toString() === 'true' ? 'green' : 'red',
       }}
