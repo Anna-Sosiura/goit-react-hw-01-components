@@ -20,6 +20,9 @@ export const App = () => {
         color: '#010101',
       }}
     >
+      <h1 style={{ marginTop: 50, marginBottom: 50, textAlign: 'center' }}>
+        Profile
+      </h1>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -27,8 +30,17 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <h1 style={{ marginTop: 50, marginBottom: 50, textAlign: 'center' }}>
+        Statistics
+      </h1>
       <Statistics title="Upload stats" stats={data} />
+      <h1 style={{ marginTop: 50, marginBottom: 50, textAlign: 'center' }}>
+        FriendList
+      </h1>
       <FriendList friends={friends} />
+      <h1 style={{ marginTop: 50, marginBottom: 50, textAlign: 'center' }}>
+        TransactionHistory
+      </h1>
       <TransactionHistory items={transactions} />
     </div>
   );
