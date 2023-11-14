@@ -2,7 +2,9 @@ import { List, Item } from './Statistics.styled';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
+      <h2 className="title" style={{ textAlign: 'center' }}>
+        {title}
+      </h2>
       <List className="stat-list">
         <Item className="item" key={stats[0].id}>
           <span className="label">{stats[0].label}</span>
