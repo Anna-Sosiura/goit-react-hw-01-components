@@ -1,3 +1,4 @@
+import { List, Item } from './Profile.styled';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
@@ -13,20 +14,20 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <p className="location">{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
+      <List className="stats">
+        <Item>
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <span className="label">Views</span>
           <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <span className="label">Likes</span>
           <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
+        </Item>
+      </List>
     </div>
   );
 };
