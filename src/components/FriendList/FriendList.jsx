@@ -1,7 +1,8 @@
+import { FriendListItem } from '../FriendListItem/FriendListItem';
 export const FriendList = ({ friends }) => {
   return (
     <ul className="friend-list">
-      <li
+      <FriendListItem
         avatar={friends.avatar}
         name={friends.name}
         isOnline={friends.isOnline}
