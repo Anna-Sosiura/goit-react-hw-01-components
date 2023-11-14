@@ -1,41 +1,43 @@
+import { Table, THead, Tr, Th, Td } from './TransactionHistory.styled';
+
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+    <Table className="transaction-history">
+      <THead>
+        <Tr>
+          <Th>Type</Th>
+          <Th>Amount</Th>
+          <Th>Currency</Th>
+        </Tr>
+      </THead>
 
       <tbody>
-        <tr key={items[0].id}>
-          <td>{items[0].type}</td>
-          <td>{items[0].amount}</td>
-          <td>{items[0].currency}</td>
-        </tr>
-        <tr key={items[1].id}>
-          <td>{items[1].type}</td>
-          <td>{items[1].amount}</td>
-          <td>{items[1].currency}</td>
-        </tr>
-        <tr key={items[2].id}>
-          <td>{items[2].type}</td>
-          <td>{items[2].amount}</td>
-          <td>{items[2].currency}</td>
-        </tr>
-        <tr key={items[3].id}>
-          <td>{items[3].type}</td>
-          <td>{items[3].amount}</td>
-          <td>{items[3].currency}</td>
-        </tr>
-        <tr key={items[4].id}>
-          <td>{items[4].type}</td>
-          <td>{items[4].amount}</td>
-          <td>{items[4].currency}</td>
-        </tr>
+        <Tr key={items[0].id}>
+          <Td>{items[0].type}</Td>
+          <Td>{items[0].amount}</Td>
+          <Td>{items[0].currency}</Td>
+        </Tr>
+        <Tr key={items[1].id}>
+          <Td>{items[1].type}</Td>
+          <Td>{items[1].amount}</Td>
+          <Td>{items[1].currency}</Td>
+        </Tr>
+        <Tr key={items[2].id}>
+          <Td>{items[2].type}</Td>
+          <Td>{items[2].amount}</Td>
+          <Td>{items[2].currency}</Td>
+        </Tr>
+        <Tr key={items[3].id}>
+          <Td>{items[3].type}</Td>
+          <Td>{items[3].amount}</Td>
+          <Td>{items[3].currency}</Td>
+        </Tr>
+        <Tr key={items[4].id}>
+          <Td>{items[4].type}</Td>
+          <Td>{items[4].amount}</Td>
+          <Td>{items[4].currency}</Td>
+        </Tr>
       </tbody>
-    </table>
+    </Table>
   );
 };
