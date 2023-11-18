@@ -33,7 +33,7 @@ export const App = () => {
       <h1 style={{ marginTop: 50, marginBottom: 50, textAlign: 'center' }}>
         Statistics
       </h1>
-      <Statistics title="Upload stats" stats={data} />
+      <Statistics title={data.title} stats={data} />
       <h1 style={{ marginTop: 50, marginBottom: 50, textAlign: 'center' }}>
         FriendList
       </h1>
